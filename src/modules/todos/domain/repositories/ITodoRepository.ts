@@ -1,5 +1,5 @@
-import { ICreateTodo } from "../models/ICreateTodo";
-import { ITodo } from "../models/ITodo";
+import { ICreateTodo } from '../models/ICreateTodo';
+import { ITodo } from '../models/ITodo';
 
 export interface ITodoRepository {
     find(): Promise<ITodo[]>;

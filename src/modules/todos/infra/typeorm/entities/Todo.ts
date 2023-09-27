@@ -1,23 +1,23 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-import { ITodo } from "../../../domain/models/ITodo";
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { ITodo } from '../../../domain/models/ITodo';
 
 @Entity()
 export class Todo implements ITodo {
     @PrimaryGeneratedColumn('uuid')
-    id: string;
+        id: string;
 
     @Column()
-    title: string;
+        title: string;
 
     @Column()
-    task: string;
+        task: string;
 
     @Column({ default: false })
-    favorite: boolean;
+        favorite: boolean;
 
-    @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP"})
-    createdAt: Date;
+    @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
+        createdAt: Date;
 
-    @UpdateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP"})
-    updatedAt: Date;
+    @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
+        updatedAt: Date;
 }

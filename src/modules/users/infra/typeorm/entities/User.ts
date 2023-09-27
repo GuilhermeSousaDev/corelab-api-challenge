@@ -3,14 +3,14 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateCol
 @Entity()
 export class User {
     @PrimaryGeneratedColumn('uuid')
-    id: string;
+        id: string;
 
     @Column({ unique: true })
-    name: string;
+        name: string;
 
-    @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP"})
-    createdAt: Date;
+    @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
+        createdAt: Date;
 
-    @UpdateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP"})
-    updatedAt: Date;
+    @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
+        updatedAt: Date;
 }

@@ -1,8 +1,8 @@
-import { inject, injectable } from "tsyringe";
-import AppError from "../../../shared/infra/errors/AppError";
-import { ICreateUser } from "../domain/models/ICreateUser";
-import { IUser } from "../domain/models/IUser";
-import { IUserRepository } from "../domain/repositories/IUserRepository";
+import { inject, injectable } from 'tsyringe';
+import AppError from '../../../shared/infra/errors/AppError';
+import { ICreateUser } from '../domain/models/ICreateUser';
+import { IUser } from '../domain/models/IUser';
+import { IUserRepository } from '../domain/repositories/IUserRepository';
 
 @injectable()
 export default class CreateUserService {

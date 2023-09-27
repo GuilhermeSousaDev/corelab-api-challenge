@@ -1,6 +1,6 @@
-import { inject, injectable } from "tsyringe";
-import { ITodo } from "../domain/models/ITodo";
-import { ITodoRepository } from "../domain/repositories/ITodoRepository";
+import { inject, injectable } from 'tsyringe';
+import { ITodo } from '../domain/models/ITodo';
+import { ITodoRepository } from '../domain/repositories/ITodoRepository';
 
 @injectable()
 export default class ListTodosService {

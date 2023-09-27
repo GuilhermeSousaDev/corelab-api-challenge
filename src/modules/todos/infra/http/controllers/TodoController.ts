@@ -1,9 +1,9 @@
-import { Request, Response } from "express";
-import { container } from "tsyringe";
-import ListTodosService from "../../../services/ListTodosService";
-import CreateTodoService from "../../../services/CreateTodoService";
-import DeleteTodoService from "../../../services/DeleteTodoService";
-import UpdateTodoService from "../../../services/UpdateTodoService";
+import { Request, Response } from 'express';
+import { container } from 'tsyringe';
+import ListTodosService from '../../../services/ListTodosService';
+import CreateTodoService from '../../../services/CreateTodoService';
+import DeleteTodoService from '../../../services/DeleteTodoService';
+import UpdateTodoService from '../../../services/UpdateTodoService';
 
 export default class TodoController {
     public async index(req: Request, res: Response): Promise<Response> {

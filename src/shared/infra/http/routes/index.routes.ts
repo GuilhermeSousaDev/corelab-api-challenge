@@ -1,7 +1,7 @@
-import { Router } from "express";
-import userRouter from "../../../../modules/users/infra/http/routes/user.routes";
-import todoRouter from "../../../../modules/todos/infra/http/routes/todo.routes";
-import toggleTodoToFavoriteRouter from "../../../../modules/todos/infra/http/routes/toggle_todo_to_favorite.routes";
+import { Router } from 'express';
+import userRouter from '../../../../modules/users/infra/http/routes/user.routes';
+import todoRouter from '../../../../modules/todos/infra/http/routes/todo.routes';
+import toggleTodoToFavoriteRouter from '../../../../modules/todos/infra/http/routes/toggle_todo_to_favorite.routes';
 
 const router = Router();
 

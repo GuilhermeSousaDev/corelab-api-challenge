@@ -14,7 +14,7 @@ export const AppDataSource = new DataSource({
     entities: [User, Todo],
     migrations: [],
     subscribers: [],
-})
+});
 
 AppDataSource.initialize()
     .then(() => console.log('Conectado'))

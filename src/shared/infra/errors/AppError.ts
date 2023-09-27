@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
 
 export default class AppError {
     message: string;
@@ -9,6 +9,7 @@ export default class AppError {
         this.statusCode = statusCode;
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     static errorMiddleware(error: Error, req: Request, res: Response, next: NextFunction) {
         if (error instanceof AppError) {
             return res.status(error.statusCode).json({

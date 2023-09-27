@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
-import { container } from "tsyringe";
-import ToggleTodoToFavoriteService from "../../../services/ToggleTodoToFavoriteService";
+import { Request, Response } from 'express';
+import { container } from 'tsyringe';
+import ToggleTodoToFavoriteService from '../../../services/ToggleTodoToFavoriteService';
 
 export default class ToggleTodoToFavoriteController {
     public async index(req: Request, res: Response): Promise<Response> {

@@ -10,7 +10,7 @@ const port = process.env.PORT || 8081;
 const app = express();
 
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded());
 
 app.use(router);
@@ -18,4 +18,4 @@ app.use(router);
 app.use(errors());
 app.use(AppError.errorMiddleware);
 
-app.listen(port, () => console.log('Iniciado'))
+app.listen(port, () => console.log('Iniciado'));

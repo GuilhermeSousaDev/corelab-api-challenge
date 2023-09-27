@@ -1,6 +1,6 @@
-import { inject, injectable } from "tsyringe";
-import { ITodoRepository } from "../domain/repositories/ITodoRepository";
-import AppError from "../../../shared/infra/errors/AppError";
+import { inject, injectable } from 'tsyringe';
+import { ITodoRepository } from '../domain/repositories/ITodoRepository';
+import AppError from '../../../shared/infra/errors/AppError';
 
 @injectable()
 export default class DeleteTodoService {

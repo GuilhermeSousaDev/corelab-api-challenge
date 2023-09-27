@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
-import { container } from "tsyringe";
-import CreateUserService from "../../../services/CreateUserService";
+import { Request, Response } from 'express';
+import { container } from 'tsyringe';
+import CreateUserService from '../../../services/CreateUserService';
 
 export default class UserController {
     public async create(req: Request, res: Response): Promise<Response> {

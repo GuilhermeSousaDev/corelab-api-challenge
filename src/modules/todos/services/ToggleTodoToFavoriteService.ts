@@ -1,7 +1,7 @@
-import { inject, injectable } from "tsyringe";
-import { ITodoRepository } from "../domain/repositories/ITodoRepository";
-import AppError from "../../../shared/infra/errors/AppError";
-import { ITodo } from "../domain/models/ITodo";
+import { inject, injectable } from 'tsyringe';
+import { ITodoRepository } from '../domain/repositories/ITodoRepository';
+import AppError from '../../../shared/infra/errors/AppError';
+import { ITodo } from '../domain/models/ITodo';
 
 @injectable()
 export default class ToggleTodoToFavoriteService {
