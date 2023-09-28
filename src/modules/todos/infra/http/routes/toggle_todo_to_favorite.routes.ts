@@ -6,13 +6,13 @@ const toggleTodoToFavoriteRouter = Router();
 const toggleTodoToFavoriteController = new ToggleTodoToFavoriteController();
 
 toggleTodoToFavoriteRouter.put(
-    '/:id',
-    celebrate({
-        [Segments.PARAMS]: {
-            id: Joi.string().required(),
-        },
-    }),
-    toggleTodoToFavoriteController.index,
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().required(),
+    },
+  }),
+  toggleTodoToFavoriteController.index,
 );
 
 export default toggleTodoToFavoriteRouter;
